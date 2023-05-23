@@ -1,0 +1,105 @@
+<html>
+<head>
+<link href="style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+	
+	<div class="container">
+		<!--  Shopping cart table wrapper  -->
+		<div id="shopping-cart">
+			<div class="txt-heading">
+				<center><h1>
+					<a href="../index.html" style="text-decoration: none; font-weight: bolder; color: blue;">CHRISTIAN N. ONLINESTORE</a>
+					</h1></center>
+				<br>
+				<h1>Shopping cart</h1>
+			</div>
+			<a onClick="emptyCart()" id="btnEmpty">Empty Cart</a>
+			<table class="tbl-cart" cellpadding="10" cellspacing="1">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th class='text-right' width="10%">Unit Price</th>
+						<th class='text-right' width="5%">Quantity</th>
+						<th class='text-right' width="10%">Sub Total</th>
+					</tr>
+				</thead>
+				<!--  Cart table to load data on "add to cart" action -->
+				<tbody id="cartTableBody">
+				</tbody>
+				<tfoot>
+					<tr>
+						<td class="text-right">Total:</td>
+						<td id="itemCount" class="text-right" colspan="2"></td>
+						<td id="totalAmount" class="text-right"></td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+		<!-- Product gallery shell to load HTML from JavaScript code -->
+		<div class="container">
+			<div id="product-grid">
+				<div class="txt-heading">
+					<h1>Products</h1>
+				</div>
+				<div id="product-item-container"></div>
+			</div>
+		</div>
+		</div><br>
+		<div className="border-bottom my-5"></div>
+		<!-- Price range-->
+		<div className="border-bottom my-4"></div>
+		<!-- Brands-->
+		<h6 className="text-uppercase mb-4">Show by brand</h6>
+		<div className="mb-2 form-check">
+		  <input className="form-check-input" id="brand0" type="checkbox" name="clothes-brand" checked>
+		  <label className="form-check-label" for="brand0">Sony <small className="text-xs text-muted">(18)
+			</small></label>
+		</div>
+		<div className="mb-2 form-check">
+		  <input className="form-check-input" id="brand1" type="checkbox" name="clothes-brand" checked>
+		  <label className="form-check-label" for="brand1">Canon <small className="text-xs text-muted">(10)
+			</small></label>
+		</div>
+		<div className="mb-2 form-check">
+		  <input className="form-check-input" id="brand2" type="checkbox">
+		  <label className="form-check-label" for="brand2">Nikon<small className="text-xs text-muted">(30)
+			</small></label>
+		</div>
+		<div className="mb-2 form-check">
+		  <input className="form-check-input" id="brand3" type="checkbox">
+		  <label className="form-check-label" for="brand3">Olympus<small className="text-xs text-muted">(30)
+			</small></label>
+		</div>
+		<div className="mb-2 form-check">
+		  <input className="form-check-input" id="brand4" type="checkbox">
+		  <label className="form-check-label" for="brand4">Lenovo<small className="text-xs text-muted">(50)
+			</small></label>
+		</div>
+		<div className="border-bottom my-4"></div>
+		<!-- Sizes-->
+		<h6 className="text-uppercase mb-4">Products</h6>
+		<form action="#">
+		  <div className="form-check mb-1">
+			<input className="form-check-input" id="size0" type="radio" name="size" checked>
+			<label className="form-check-label" for="size0">Laptop</label>
+		  </div>
+		  <div className="form-check mb-1">
+			<input className="form-check-input" id="size1" type="radio" name="size">
+			<label className="form-check-label" for="size1">DSLR</label>
+		  </div>
+		  <div className="form-check mb-1">
+			<input className="form-check-input" id="size2" type="radio" name="size">
+			<label className="form-check-label" for="size2">Watch</label>
+		  </div>
+		</form>
+	  </div>
+	</div>
+  </div>
+  </div>
+  </div>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="cart.js"></script>
+</body>
+</html>
